@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #0c1027;
+    color:#fff;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+/* navbar styling starts */
+.navbar{
+    width: 100vw;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+    box-sizing: border-box;
+}
+.logoImg{
+    width: 50px;
+    height: 50px;
+    background-image: url("./images/logo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+.part1{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+}
+.logo{
+    display: flex;
+}
+.logoName{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.logo h3{
+    margin: 0;
+}
+.part2{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+}
+.notif img{
+    filter: invert(100%) sepia(100%) saturate(7%) hue-rotate(117deg) brightness(101%) contrast(102%);
+    height: 20px;
+    width: 20px;
+    
+}
+.profile{
+    width: 50px;
+    height: 50px;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+
+}
+/* navbar styling ends */
+
+
+
+.fullBodyExceptNavbar{
+    width: 100vw;
+    padding: 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* setting 3 main sections songPreview, SongList and playingSong starts */
+.songPreviews{
+    width: 70%; /*75% of .fullBodyExceptNavbar*/
+    /* border: 1px solid white; */
+    padding: 10px;
+}
+
+.playingSong{
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    bottom: 0px;
+    border: 1px solid white;
+}
+/* setting 3 main sections songPreview, SongList and playingSong ends */
+
+/* Main Albums starting */
+.mainAlbums{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px auto;
+}
+.album1, .album2,.album3{
+    width: 30%;
+    height: 150px;
+}
+.album1 img, .album2 img,.album3 img{
+    width: 100%;
+    height: 100%;
+}
+/* Main Albums ends */
+
+/* Latest album styling starts */
+
+.latestAlbumMainBody{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-around;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    overflow:auto;
+    border-radius: 10px;
+    padding: 15px; 
+    box-shadow: inset 0px 0px 7px 1px #414255;
+}
+.latestAlbumMainBody::-webkit-scrollbar{
+    display: none;
+}
+.latest{
+    width: 30%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #91919147;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding-right: 10px;
+    box-shadow: 0 0 5px 0px #a69c9c;
+}
+
+.latest .albumImage{
+    width: 50px;
+    height: 50px;
+}
+.latest .albumImage img{
+    width: 100%;
+    height: 100%;
+}
+/* Latest album styling ends */
+
+ /* Song Reccomandation section starts */
+ .reccos{
+    width: 25%; /*25% of .fullBodyExceptNavbar*/
+    /* border: 1px solid white; */
+    height: 90vh;
+    box-shadow: inset 0px 0px 7px 1px #414255;
+    overflow: scroll;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.reccos::-webkit-scrollbar{
+    overflow: hidden;
+}
+.reccoText{
+    margin-left: 10px;
+}
+ .reccoSong{
+     width: 90%;
+     height: 60px;
+     /* border: 1px solid white; */
+     border-radius: 5px;
+     margin:10px auto;
+     display: flex;
+     align-items: center;
+     padding: 10px;
+    box-shadow: 0 0 3px 1px #a69c9c;
+
+ }
+ .reccoSongImg{
+     width: 35px;
+     height: 35px;
+     margin: 10px;
+ }
+ .reccoSongImg img{
+    width: 100%;
+    height: 100%;
+ }
+ .reccoSongDetails{
+    margin: 10px;
+ }
+ .reccoSongArtist{
+     font-size: 13px;
+     color: #868686;
+ }
+ .reccoSongFav{
+     margin-left: 50px;
+ }
+ /* Song Reccomandation section ends */
